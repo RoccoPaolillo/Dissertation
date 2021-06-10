@@ -45,7 +45,7 @@ knitr::opts_chunk$set(echo = TRUE)
 \end{centering}
 
 
-Schelling proposed an influential agent-based model to demonstrate how segregation can emerge from the interaction of people holding ethnic homophily preferences for neighborhood composition and subscribing to a threshold model behavior. In our previous work we extended Schelling by introducing an additional characteristic to agents as value orientation and similarity based on shared values rather than the exclusive category of ethnicity. In this paper, I introduce a binary choice for relocation decision of agents that stems from discrete choice and random utility models. I explore the interaction of agents holding different combinations of integrationist and segregationist preferences for the ethnic composition and value composition of potential neighborhoods both in equal group size and in majority-minority conditions. Results show how segregation persists also for integrationist preferences, but that the interdependence of value and ethnic preferences along with structural conditions as relative group size and distribution of values would generate different patterns on the continuum integration/segregation for different groups. Future directions are discussed.
+Society is made up of different people belonging to different groups.
 
 \newpage
 
