@@ -44,8 +44,29 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \end{centering}
 
+WHAT        
+Society is made up of people belonging to different groups.
+Residential segregation is a crucial issue to social policies, interested in reducing spatial segregation and foster integration.
+From a theoretical point of view, much researc has been interested in developing quantitative measures of spatial segregation, qualitative research on the residential preferences of people and how these translate into spatial segregation. 
+A critical interest in the social sciences is to understand the mechanisms and dynamics of how individual residential preferences can translate into spatial segregation. This dissertation is rooted in this area of research. 
+Agent-based modelling and analytical sociology, social complexity are widely recognized as a valid tool to understand such phenomena.     
+ORIGINAL FRAME              
+Thomas Schelling proposed in the last 60's a noteworthy agent-based modelling to show how individual preferences could translate into spatial segregation. In particular, the model builds on threshold preferences, i.e. the minimal fraction of similar ones in neighborhood composition to remain in a neighborhood. The main contribution of the model is to show how spatial segregation can result from even low preferences for similar ones through cascades effect of individual relocations. The model has a wide application in describing residential ethnic segregation.     
+BUT     
+However, societies today shows some features that clash with the original assumptions of Schelling's model and its application in ethnic segregation literature in Western societies.
+First, society is inertly diverse, the paradigm majority-minority does not work anymore as much as minority-minority.
+A growing stream of literature shows how other forms of spatial segregation have emerged, e.g. socio-economic status.
+Other forms of categories can drive homophily preferences in the residential decisions. This is first a theoretical opportunity that can be applied to Schelling's model, as well as seems an empirical evidence of current, diverse societies. 
+WHAT IS NEW?        
+This dissertation focuses on this aspect: definition of similarity based on other cross-ethnic categories, and the heterogeneity of members of the same group for one or either category.      
+HOW AND WHAT?         
+In a first paper, we focus on ethnic-oriented vs value-oriented agents. Results show how the introduction of value oriented agents diminishes ethnic segregation compared to the original Schelling's model, though a new form of value segregation emerges. We identify critical points were all agents can be satisfied with neighborhoods.
+In a second paper, we translate the model into a discrete choice random utility model. This not only updates the research outcome to more recent literature in Schelling's literature, but also serves different aims. First, discrete choice random utility models allow to model decision making in residential segregation, modeling the weight for each preference, which translates into randomness of behavior and test robustness of emerging phenomena. Additionally, we tested a mix of preferences with both ethnic and value preference for each type of agent and imposing a dominant and a secondary preference, along with different structural condition in terms of ethnic and value sizes. We specifically focus on how segregation scenarios would differ if a minority population would become more or less liberal. Results show how a tendency towards segregation remains a main outcome of relocation decision, through ethnic integration can be reached as an intermediate state due to a combination of higher randomness and relative group sizes. The most robust result is value segregation of conservatives, as in the ACS paper: that it is robust since appears both in trheshold model and linear function.
+A third and final paper 
 
-Society is made up of different people belonging to different groups.
+
+
+
 
 \newpage
 
