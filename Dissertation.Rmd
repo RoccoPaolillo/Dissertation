@@ -1,1 +1,73 @@
-s
+---
+output:
+   bookdown::pdf_document2:
+    toc: false
+    keep_tex: true
+    fig_caption: yes
+title: "Dissertation RP"
+# subtitle: "Target: BIGSSS Research Day"
+author: 
+    | 
+    | Rocco Paolillo 
+    | Bremen International Graduate School of Social Sciences
+    | University of Bremen & Jacobs University Bremen
+    | Mary-Somerville-Str. 9, 28359 Bremen, Germany  
+    | rpaolillo@bigsss-bremen.de
+# date: JU 
+language: en-GB
+bibliography: "references.bib"
+csl: apa.csl
+# always_allow_html: yes
+
+# target: BIGSSS Research Day by September 15th, presented  on October 25th. 6000 words: around 12 pages.
+# csl: apa.csl # by default: Chicago style
+header-includes:
+- \usepackage{float}
+- \usepackage{multirow}
+- \usepackage{xcolor} 
+- \usepackage{amsmath}
+- \usepackage{graphicx}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+
+```
+
+\newpage
+
+\begin{centering}
+
+{\bf Executive Summary}
+
+\end{centering}
+
+
+Schelling proposed an influential agent-based model to demonstrate how segregation can emerge from the interaction of people holding ethnic homophily preferences for neighborhood composition and subscribing to a threshold model behavior. In our previous work we extended Schelling by introducing an additional characteristic to agents as value orientation and similarity based on shared values rather than the exclusive category of ethnicity. In this paper, I introduce a binary choice for relocation decision of agents that stems from discrete choice and random utility models. I explore the interaction of agents holding different combinations of integrationist and segregationist preferences for the ethnic composition and value composition of potential neighborhoods both in equal group size and in majority-minority conditions. Results show how segregation persists also for integrationist preferences, but that the interdependence of value and ethnic preferences along with structural conditions as relative group size and distribution of values would generate different patterns on the continuum integration/segregation for different groups. Future directions are discussed.
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\listoffigures
+\newpage
+\listoftables
+\newpage
+
+
+
+```{r intro, child='Intro.Rmd'}
+
+```
+
+```{r Second, child='paper2.Rmd'}
+
+```
+
+
+
+# References
