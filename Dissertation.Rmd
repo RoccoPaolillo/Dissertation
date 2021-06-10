@@ -139,6 +139,12 @@ The aim of this contribution is
 
 
 ## Aim of dissertation
+* Given these observations on modern diverse societies and different complex scenarios of spatial segregation, how can we bring Schelling to these scenarios? In particular the question evolves into:
+- What are the consequences of different definition of similarity?
+- What different types of spatial segregation would emerge? And what other, if any, unexepcted consequences?
+- How can spatial segregation being reduced out of these extensions?
+- Main scenario investigated: definition of similarity based on ethnic membership vs cross-ethnic supposedly inclusive category (in the model description value)
+- Different degree of preference or tolerance for either similarity based on the own group membership
 \rocco{the next point is crucial and should be well developed, summarizing what specific niche/scenario the dissertation proposes as advance to Schelling's framework and research question(s), and then move with specific literature}
 * Out of such diversity, other categories people belong to can matter in the definition of similarity and neighborhood preferences, independent on and complementary to ethnic membership. People belonging to different groups can hold different degree of preferences for ethnic membership or alternative categories.
 * This is both a theoretical possibility and an empirical evidence as growing empirical literature shows
@@ -146,8 +152,40 @@ The aim of this contribution is
 
 
 \newpage
-## Ethnic boundary
+## Paper 1
+* Aim: exploration of what are the consequences of different definition of similarity; effect of relative group size
+* Extension: different definition of similarity, remaining into a deterministic, deterministic model and threshold function
+* Literature associated? More focused on ethnic boundary making and homophily preferences
+* Model description: tolerant agents value-oriented vs intolerant ethnicity-oriented
+* Measures: exposure, density
+* Experiments: parameter sweeping
+* Results: decrease ethnic segregation due to tolerant agents, spillover effect
 
+## Paper 2
+* Aim: Understand better mechanisms associated with different homophily preferences and heterogeneity for value/ethnic similarity, how integration for both or either dimensions can be reached?
+* Explore consequences of a mix of preferences for ethnic and value similarity in both types of agents, mantaining dominant and secondary preference; effect of ethnic ratio and value distribution in minority
+* Extension: probabilistic and linear utility function random utility model: to represent the decisional process, a weight for each dimension and robustness of emerging results (randomness); ethnic ratio and value distribution of minority
+* \rocco{here it risks to be tricky: a theoretical section, or mention briefly?} Here literature on discrete choice random utility: utility models (empirical science McFadden...), utility function vs probability function, what differs between abm and regression models. Literature in abm: Bruch-Van Rijt discussions...
+* Model description
+* Measures: exposure, spatial clutering for asymmetric conditions
+* Experiments: parameter sweeping, more sensitivity analysis
+* Results: by-product value segregation of conservatives (ex spillover effect) better understood, as effect of more robust/denser neighborhoods of liberals, integration can be reached as an intermediate state towards segregation, due to a mix of lower randomnes, ethnic and value size. Effect of ethnic ratio on effect of weights: By-product of majority size over minority, specific scenario of liberals minority.
+
+## Paper 3?
+* Aim: definition of tolerance as integrationist preferences: push towards integration. Would this reduce by-product value segregation that appeared both in threshold and discrete choice version, and reduce ethnic segregation?
+* Model description
+* Experiments
+* Results
+
+## Conclusions and Discussion
+* What can we say about segregation dynamics?
+* How a threshold and a discrete  choice model differ? How robut results are across different implementations?
+* What unexpected results were reached? How strong segregation emerges even if integrationist attitudes?
+
+## Limits and Future Research Agenda
+* Theoretical models vs empirical data
+* Basic research
+* Validation in the future, we know the dynamics and unexpected consequences of individual preferences based on diverse definition of similarity, and sociodemographic conditions
 
 
 \newpage
