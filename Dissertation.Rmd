@@ -116,11 +116,33 @@ The aim of this contribution is
 * Results: ethnic segregation is decreased, while other forms of segregation have emerged (e.g. socio-economic status)
 * Societies are inherently different. The paradigm majority-minority most literature on ethnic segregation was built on (see School of Chicago and spatial assimilation) not stand. Different paradigms emerge (see @crul2016super, @vertovec2007super)
 
+\rocco{here it becomes tricky: diverse type of segregation as the aspect that clashes with Schelling's framework}
+## New forms of Residential segregation
+* As an outcome: residential segregation experienced on diverse forms at at different levels for members of the same ethnic group or social class or other categories
+* New residential preferences alternative to ethnic homophily:
+    + Increased preference for diversity for some members of the same social category
+    + Diverse ethnic tolerance
+    + Preference for other forms of similarity
+
+
+## Superdiverse societies
+* Society is more diverse compared to the historical context Schelling built on and to the theoretical assumption of similarity based on ethnicity as an exclusive dimension:
+* Sociodemographic changes:
+    * the paradigm majority-minority (e.g. white vs black) does not work anymore, rather an amalgama of ethnicities (see @vertovec2007super) as effect of new generations of migrants' descendents and faster international mobility
+    * correlation ethnicity/social class: members of minority can be in upper class, members of majority being in the lower class
+\rocco{though majority still holds a numeric majority and in the upper class, it is changing}
+* In such a complex scenario, the process of defining boundaries of membership become relevant: Ethnic boundary making
+
+## Ethnic Boundary Making
+* dynamic process of definition of inclusion
+* ethnicity not an exclusive category
+
+
+## Aim of dissertation
 \rocco{the next point is crucial and should be well developed, summarizing what specific niche/scenario the dissertation proposes as advance to Schelling's framework and research question(s), and then move with specific literature}
 * Out of such diversity, other categories people belong to can matter in the definition of similarity and neighborhood preferences, independent on and complementary to ethnic membership. People belonging to different groups can hold different degree of preferences for ethnic membership or alternative categories.
-* This is both a theoretical possibility and an empirical evidence as growing empircal literature shows
+* This is both a theoretical possibility and an empirical evidence as growing empirical literature shows
 * It can contribute to lower ethnic segregation and show more complex scenarios of segregation
-
 
 
 \newpage
