@@ -12,5 +12,5 @@ knitr::opts_chunk$set(echo = TRUE)
 Bla bla @paolillo2018
 
 ```{r test, fig.cap="test figure", echo=F }
-knitr::include_graphics("images/paper1/Heatmap.pdf")
+knitr::include_graphics("images/Heatmap.pdf")
 ```
