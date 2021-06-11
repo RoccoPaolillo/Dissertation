@@ -138,7 +138,7 @@ The aim of this contribution is
 * ethnicity not an exclusive category
 
 
-## Aim of dissertation
+# Aim of dissertation
 * Given these observations on modern diverse societies and different complex scenarios of spatial segregation, how can we bring Schelling to these scenarios? In particular the question evolves into:
 - What are the consequences of different definition of similarity?
 - What different types of spatial segregation would emerge? And what other, if any, unexepcted consequences?
@@ -152,7 +152,7 @@ The aim of this contribution is
 
 
 \newpage
-## Paper 1
+# Paper 1
 * Aim: exploration of what are the consequences of different definition of similarity; effect of relative group size
 * Extension: different definition of similarity, remaining into a deterministic, deterministic model and threshold function
 * Literature associated? More focused on ethnic boundary making and homophily preferences
@@ -161,7 +161,8 @@ The aim of this contribution is
 * Experiments: parameter sweeping
 * Results: decrease ethnic segregation due to tolerant agents, spillover effect
 
-## Paper 2
+\newpage
+# Paper 2
 * Aim: Understand better mechanisms associated with different homophily preferences and heterogeneity for value/ethnic similarity, how integration for both or either dimensions can be reached?
 * Explore consequences of a mix of preferences for ethnic and value similarity in both types of agents, mantaining dominant and secondary preference; effect of ethnic ratio and value distribution in minority
 * Extension: probabilistic and linear utility function random utility model: to represent the decisional process, a weight for each dimension and robustness of emerging results (randomness); ethnic ratio and value distribution of minority
@@ -171,24 +172,29 @@ The aim of this contribution is
 * Experiments: parameter sweeping, more sensitivity analysis
 * Results: by-product value segregation of conservatives (ex spillover effect) better understood, as effect of more robust/denser neighborhoods of liberals, integration can be reached as an intermediate state towards segregation, due to a mix of lower randomnes, ethnic and value size. Effect of ethnic ratio on effect of weights: By-product of majority size over minority, specific scenario of liberals minority.
 
-## Paper 3?
+\newpage
+# Paper 3?
 * Aim: definition of tolerance as integrationist preferences: push towards integration. Would this reduce by-product value segregation that appeared both in threshold and discrete choice version, and reduce ethnic segregation?
 * Model description
 * Experiments
 * Results
 
-## Conclusions and Discussion
+\newpage
+# Conclusions and Discussion
 * What can we say about segregation dynamics?
 * How a threshold and a discrete  choice model differ? How robut results are across different implementations?
 * What unexpected results were reached? How strong segregation emerges even if integrationist attitudes?
 
-## Limits and Future Research Agenda
+\newpage
+# Limits and Future Research Agenda
 * Theoretical models vs empirical data
 * Basic research
 * Validation in the future, we know the dynamics and unexpected consequences of individual preferences based on diverse definition of similarity, and sociodemographic conditions
 
-
 \newpage
+# Appendix
+
+
 
 
 
