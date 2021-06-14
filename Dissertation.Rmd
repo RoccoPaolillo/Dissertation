@@ -180,16 +180,35 @@ The aim of this contribution is
 * Results
 
 \newpage
-# Conclusions and Discussion
+# Conclusions
 * What can we say about segregation dynamics?
+- Effect of cross-ethnic preferences vs ethnic preferences: what is the difference, through neighborhood density
+- Effect of relative weights (discrete choice implementation)
+- Effect of relative group and value size
+- Intermediate levels of integration as effect of randomness, preference and relative size
+- What unexpected results were reached? How strong segregation emerges even if integrationist attitudes?
+
+\newpage
+# Discussion
+* Difference between deterministic threshold model vs discrete choice model: what changes? Theta 0 = beta 0, high determinism small fluctuations due to randomness
 * How a threshold and a discrete  choice model differ? How robut results are across different implementations?
-* What unexpected results were reached? How strong segregation emerges even if integrationist attitudes?
+* Comparison with discrete choice models in empirical science used e.g. to estimate parameters determinism $\beta$ and utility function: 
+- observed preference (e.g. from census data): equilibria are already emerged and other factors (or dynamics) context-specific could cause segregation
+- stated preference (e.g. survey): other factors could intervene, so that the actual segregation could be not derived from individual stated preference
+- In the end, they reply to a different question: The aim in regression models is to estimate and validate individual preferences from data. The aim of abm is to observe aggregated results and formalize their dynamics, plus the possibility to model separately utility function and probability function (see @bruch2009preferences) and impose any range of parameters \rocco{connects with limits/future agenda: what is the use of theoretical models vs data-driven models for spatial sciences}
 
 \newpage
 # Limits and Future Research Agenda
-* Theoretical models vs empirical data
-* Basic research
+* Limits
+- Focus/contribution for modelling/complexity literature over empirical literature in residential studies
+- Theoretical models vs data-driven models
+- However, contribution of abm is to understand mechanisms, which justifies theory-driven models.
+* Data
 * Validation in the future, we know the dynamics and unexpected consequences of individual preferences based on diverse definition of similarity, and sociodemographic conditions
+* comparsion with empirical data: what type of data? During the Phd different surveys and aggregate neighborhood data were explored which could have fit the model -> need to have joint probability -> micro data
+* Additional layers: other socio-demographic characteristics, and resources associated
+
+
 
 \newpage
 # Appendix
