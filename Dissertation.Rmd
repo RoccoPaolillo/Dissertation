@@ -165,8 +165,56 @@ The aim of this contribution is
 # Paper 2
 * Aim: Understand better mechanisms associated with different homophily preferences and heterogeneity for value/ethnic similarity, how integration for both or either dimensions can be reached?
 * Explore consequences of a mix of preferences for ethnic and value similarity in both types of agents, mantaining dominant and secondary preference; effect of ethnic ratio and value distribution in minority
-* Extension: probabilistic and linear utility function random utility model: to represent the decisional process, a weight for each dimension and robustness of emerging results (randomness); ethnic ratio and value distribution of minority
+* Extension: probabilistic model and linear utility function random utility model: to represent the decisional process, a weight for each dimension and robustness of emerging results (randomness); ethnic ratio and value distribution of minority
 * \rocco{here it risks to be tricky: a theoretical section, or mention briefly?} Here literature on discrete choice random utility: utility models (empirical science McFadden...), utility function vs probability function, what differs between abm and regression models. Literature in abm: Bruch-Van Rijt discussions...
+
+Random utility models for discrete choice have a long history in housing research \citep{frankhauser2016deciding} and in recent years they have been applied in the agent-based modeling framework \citep{bruch2006neighborhood,bruch2012methodological}.
+Stemming from the utility maximization paradigm, these model assume that the decisional process underlying the choice of economic actors is unknown, and it can be deduced by observed preferences, i.e. how selection of respondents differ for attributes of the options available \citep{hess2018revisiting}, e.g. different neighborhood composition. So, aim of regression models comparing choices of the sample is to estimate vector parameters that quantify the likelihood to select one option over the other depending on the  difference in their attributes \citep{manski1977structure}. 
+Utility in this context is defined as the attractiveness for each characteristic the options differ for and it is based on the response curve of the respondent \citep{bruch2015agent,train2009discrete} imposed based on the theoretical model of the analyst.
+Nevertheless, random utility models divide between a systematic component of utility, i.e. observable differences between options based on their utility, and a random term, representing all unknown factors associated with selection of that options, might they depend on other characteristics of the option, characteristics of the selector or an interaction of both. Compared to our model, random utility for a generic neighborhood is:
+
+
+\begin{equation}
+    U = \beta_e U_e + \beta_v U_v + \epsilon
+\end{equation}
+
+where: \par
+$\beta_e$ = weight parameter for ethnic similarity, with $\beta_e [0, \infty)$ \par
+$U_e$ = ethnic utility of neighborhood \par
+$\beta_v$ = weight parameter for value similarity, with $\beta_v [0, \infty)$  \par
+$U_v$ = value utility of neighborhood  \par
+$\epsilon$ = random term \par
+
+While parameters $\beta_e$ and $\beta_v$ can be estimated  through regression models, the random term $\epsilon$ remains unknown. The conditional logit model introduced by  \cite{mcfadden1973conditional} is a specific type of discrete choice model that allow to quantify the effect of systematic utility over random component, though remaining the latter unknown. Assuming the random term $\epsilon$ follows a type I extreme value distribution, e.g. Gumbel distribution, the probability to select neighborhood \textit{j} out of options \textit{k} in choice set \textit{C} is:
+
+
+\begin{equation}
+P_{j\in{C}} = \frac{exp(\beta_e U^e_j + \beta_v U^v_j)}{\sum\limits_{{k\in{C}}}exp(\beta_e U^e_k + \beta_v U^v_k)}
+\label{eq:cndtnl}
+\end{equation}
+
+<!-- from AF paper, cut out -->
+
+In this computation of probability, parameters $\beta_e$ and $\beta_v$ become the weight of how much the systematic component of utility for that dimension matters in the selection of the option compared to the random component represented  by the unknown random term. The higher $\beta_e$ or $\beta_v$, the higher the likelihood that the option with highest utility for that dimension will be selected, the lower $\beta_e$ or $\beta_v$, the higher the chance that an option is selected randomly for that dimension. With both $\beta_e$ and $\beta_v$ equal 0, the all options have equal probability to be selected, since the choice is totally stochastic, i.e. dependent on random term.
+
+
+Implementation of discrete choice in agent-based modelling has a  number of peculiarities compared to empirical regression models. First and above all, estimated preferences in regression models depend on a the comparison of a limited set of observed cases that can profoundly affect results. 
+Moreover, utility remains a random variable estimated through parameters $\beta$ and computation of probability to select one option.
+Probability to select one option over the others as behavioral response to change in their attributes is the equivalent to utility. 
+As \citep{bruch2009preferences} stress out, agent-based modeling are deeply different in this aspect, allowing to model independently and quantify the elements of the conditional logit based on a theoretical model. 
+Researchers can impose different combinations of utility function for all ranges of neighborhood characteristics and parameters $\beta$ in the relocation decisions of agents to observe their aggregated results. Additionally, modellers can include other elements that contribute to the dynamics of emerging spatial segregation, such as diverse heterogeneous distributions of preferences (see \citep{xie2012modeling}) or population structures that can influence neighborhood composition \citep{bruch2014population}.
+
+Also agent-based modelling can benefit from the implementation of discrete choice models, not only for the formalization of the decisional process of agents and calibration with parameters $\beta$ estimated \citep{bruch2006neighborhood}, but also for the inclusion of the stochastic random term. Randomness is useful to both test robustness of observed phenomena in complex systems and increase their realism through inclusion of random fluctuations against deterministic behavior.
+A traditional way to include randomness in the dynamics of an agent-based model is as an external noise, for  instance in Schelling's model, with a percentage of agents, or additional agents, forced to randomly relocate by the researcher. 
+Implementation of discrete choice allows to include randomness as an endogenous component in the relocation decision of individual agents through the random term compared to parameters of determinism. 
+Useful to our interest in the interplay of value and ethnic preferences, the parameter $\beta$ can vary as a local variable of agents, so to sort out differences in the ratio between deterministic and random relocation depending on characteristics of agents. 
+We build on this peculiarity of random utility models to test how random behavior of a specific type of agents for value orientation, ethnicity or a combination of both can influence the emergence of stable equilibria of hybrid segregation. 
+We can moreover explore the interdependence between different types of agents and how determinism of agents would react to different distributions of the two characteristics of ethnicity and value orientation in the population. In the next section we describe our extension of \cite{paolillo2018} and how we implemented random utility discrete choice.
+
+
+
+
+
 * Model description
 * Measures: exposure, spatial clutering for asymmetric conditions
 * Experiments: parameter sweeping, more sensitivity analysis
