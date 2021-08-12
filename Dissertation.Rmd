@@ -5,6 +5,7 @@ output:
     keep_tex: true
     fig_caption: yes
 title: "Dissertation RP"
+subtitle: "In partial preparation of submission ..."
 author: 
     | 
     | Rocco Paolillo 
@@ -100,17 +101,26 @@ The aim of this contribution is
         * But the main question remains: how the dynamics work? See @van2012neighborhood \rocco{this justifies more abm as a method than Schelling's contribution themselves. I would rather add a paragraph on need of analytical sociology/social complexity as need, and abm as a tool}
         * An alternative model: Schelling's model
         
-## Schelling's model
+## Schelling model
+
 \rocco{ I think a connection is feasible and I think worthy. I'm not saying Schelling's did his work because of the new legislation, I don't remember something similar, but he mentions segregation by color as main concern '69 paper.}
-* Historical/academic background: years of end of racial laws and planned segregation (late 60's). Schelling was an economist and wanted to demonstrate how some forms of segregation could be "unplanned", emerging from the interaction of individual preferences. 
-* Original aim: explain unplanned segregation as aggregating outcome of individual preferences in limited spatial constraints. 
-* Description of the model and main contribution
-The basic condition of Schelling model is that similarity of agents is defined as a "twofold, exhaustive and recognizable distinction" @schelling69[p.20]
-Consider two groups of agents who reside on a checkerboard that represents a city, so that each individual agent occupies a spot and considers the set of the eight surrounding agents as its own ‘neighborhood’. 
+
+### Historical/academic background: years of end of racial laws and planned segregation (late 60's). Schelling was an economist and wanted to demonstrate how some forms of segregation could be "unplanned", emerging from the interaction of individual preferences. {-}
+
+### Original aim: explain unplanned segregation as aggregating outcome of individual preferences in limited spatial constraints.{-} 
+
+### Description of the model and main contribution {-}
+
+The basic condition of Schelling model is that similarity of agents is defined as a "twofold, exhaustive and recognizable distinction" [@schelling69, p.488].
+What I describe here is known as the spatial proximity, or checkerboard version of the model.
+Consider two groups of agents who reside on a lattice grid (a checkerboard) that represents a city, so that each individual agent occupies a cell of the grid and considers the set of the eight surrounding agents as its own ‘neighborhood’. 
 Some spots are empty on the checkerboard.
+Agents are divided by color^[This is a description of the model adapted from @leon2017analytical, \rocco{for the red/blue scenario, delete in the end if any}].
 At each time-step, one agent can choose whether to stay or to leave. 
-Its residential moves depend on homophily preferences based on color, with a certain threshold for in-group members. 
-Imagine a red agent starts. 
+Its residential moves depend on the concentration of similar agents in the neighborhood, quantified by a threshold.
+If the concentration of desired similar agents in the local neighborhood falls below the desired threshold, the agent leave to a random sport.
+The contribution of the model is to describe how the interaction of individuals subscribing to a similar behavior can translate into high levels of segregation \rocco{and high levels even with mild preferences, check if add here or later}
+Imagine one red agent starts. 
 If the percentage of other red agents in the neighborhood falls below the threshold, the agent relocates to one of the empty spots on the checkerboard, so to leave its previous spot in the old neighborhood empty. 
 By doing so, the red agent changes the composition of both its previous neighborhood and its new one.
 In particular, the percentage of same-color agents decreases for other red agents left in the previous neighborhood, while it increases for other red agents in the new neighborhood. 
@@ -181,9 +191,9 @@ This, in turn, can lead to high segregation—even with relatively tolerant agen
 * Extension: probabilistic model and linear utility function random utility model: to represent the decisional process, a weight for each dimension and robustness of emerging results (randomness); ethnic ratio and value distribution of minority
 * \rocco{here it risks to be tricky: a theoretical section, or mention briefly?} Here literature on discrete choice random utility: utility models (empirical science McFadden...), utility function vs probability function, what differs between abm and regression models. Literature in abm: Bruch-Van Rijt discussions...
 
-Random utility models for discrete choice have a long history in housing research \citep{frankhauser2016deciding} and in recent years they have been applied in the agent-based modeling framework \citep{bruch2006neighborhood,bruch2012methodological}.
-Stemming from the utility maximization paradigm, these model assume that the decisional process underlying the choice of economic actors is unknown, and it can be deduced by observed preferences, i.e. how selection of respondents differ for attributes of the options available \citep{hess2018revisiting}, e.g. different neighborhood composition. So, aim of regression models comparing choices of the sample is to estimate vector parameters that quantify the likelihood to select one option over the other depending on the  difference in their attributes \citep{manski1977structure}. 
-Utility in this context is defined as the attractiveness for each characteristic the options differ for and it is based on the response curve of the respondent \citep{bruch2015agent,train2009discrete} imposed based on the theoretical model of the analyst.
+Random utility models for discrete choice have a long history in housing research [@frankhauser2016deciding] and in recent years they have been applied in the agent-based modeling framework [@bruch2006neighborhood,bruch2012methodological].
+Stemming from the utility maximization paradigm, these model assume that the decisional process underlying the choice of economic actors is unknown, and it can be deduced by observed preferences, i.e. how selection of respondents differ for attributes of the options available [@hess2018revisiting], e.g. different neighborhood composition. So, aim of regression models comparing choices of the sample is to estimate vector parameters that quantify the likelihood to select one option over the other depending on the  difference in their attributes [@manski1977structure]. 
+Utility in this context is defined as the attractiveness for each characteristic the options differ for and it is based on the response curve of the respondent [@bruch2015agent,train2009discrete] imposed based on the theoretical model of the analyst.
 Nevertheless, random utility models divide between a systematic component of utility, i.e. observable differences between options based on their utility, and a random term, representing all unknown factors associated with selection of that options, might they depend on other characteristics of the option, characteristics of the selector or an interaction of both. Compared to our model, random utility for a generic neighborhood is:
 
 
@@ -198,7 +208,7 @@ $\beta_v$ = weight parameter for value similarity, with $\beta_v [0, \infty)$  \
 $U_v$ = value utility of neighborhood  \par
 $\epsilon$ = random term \par
 
-While parameters $\beta_e$ and $\beta_v$ can be estimated  through regression models, the random term $\epsilon$ remains unknown. The conditional logit model introduced by  \cite{mcfadden1973conditional} is a specific type of discrete choice model that allow to quantify the effect of systematic utility over random component, though remaining the latter unknown. Assuming the random term $\epsilon$ follows a type I extreme value distribution, e.g. Gumbel distribution, the probability to select neighborhood \textit{j} out of options \textit{k} in choice set \textit{C} is:
+While parameters $\beta_e$ and $\beta_v$ can be estimated  through regression models, the random term $\epsilon$ remains unknown. The conditional logit model introduced by  [@mcfadden1973conditional] is a specific type of discrete choice model that allow to quantify the effect of systematic utility over random component, though remaining the latter unknown. Assuming the random term $\epsilon$ follows a type I extreme value distribution, e.g. Gumbel distribution, the probability to select neighborhood \textit{j} out of options \textit{k} in choice set \textit{C} is:
 
 
 \begin{equation}
@@ -214,15 +224,15 @@ In this computation of probability, parameters $\beta_e$ and $\beta_v$ become th
 Implementation of discrete choice in agent-based modelling has a  number of peculiarities compared to empirical regression models. First and above all, estimated preferences in regression models depend on a the comparison of a limited set of observed cases that can profoundly affect results. 
 Moreover, utility remains a random variable estimated through parameters $\beta$ and computation of probability to select one option.
 Probability to select one option over the others as behavioral response to change in their attributes is the equivalent to utility. 
-As \citep{bruch2009preferences} stress out, agent-based modeling are deeply different in this aspect, allowing to model independently and quantify the elements of the conditional logit based on a theoretical model. 
-Researchers can impose different combinations of utility function for all ranges of neighborhood characteristics and parameters $\beta$ in the relocation decisions of agents to observe their aggregated results. Additionally, modellers can include other elements that contribute to the dynamics of emerging spatial segregation, such as diverse heterogeneous distributions of preferences (see \citep{xie2012modeling}) or population structures that can influence neighborhood composition \citep{bruch2014population}.
+As [@bruch2009preferences] stress out, agent-based modeling are deeply different in this aspect, allowing to model independently and quantify the elements of the conditional logit based on a theoretical model. 
+Researchers can impose different combinations of utility function for all ranges of neighborhood characteristics and parameters $\beta$ in the relocation decisions of agents to observe their aggregated results. Additionally, modellers can include other elements that contribute to the dynamics of emerging spatial segregation, such as diverse heterogeneous distributions of preferences (see [@xie2012modeling]) or population structures that can influence neighborhood composition [@bruch2014population].
 
-Also agent-based modelling can benefit from the implementation of discrete choice models, not only for the formalization of the decisional process of agents and calibration with parameters $\beta$ estimated \citep{bruch2006neighborhood}, but also for the inclusion of the stochastic random term. Randomness is useful to both test robustness of observed phenomena in complex systems and increase their realism through inclusion of random fluctuations against deterministic behavior.
-A traditional way to include randomness in the dynamics of an agent-based model is as an external noise, for  instance in Schelling's model, with a percentage of agents, or additional agents, forced to randomly relocate by the researcher. 
+Also agent-based modelling can benefit from the implementation of discrete choice models, not only for the formalization of the decisional process of agents and calibration with parameters $\beta$ estimated [@bruch2006neighborhood], but also for the inclusion of the stochastic random term. Randomness is useful to both test robustness of observed phenomena in complex systems and increase their realism through inclusion of random fluctuations against deterministic behavior.
+A traditional way to include randomness in the dynamics of an agent-based model is as an external noise, for  instance in Schelling model, with a percentage of agents, or additional agents, forced to randomly relocate by the researcher. 
 Implementation of discrete choice allows to include randomness as an endogenous component in the relocation decision of individual agents through the random term compared to parameters of determinism. 
 Useful to our interest in the interplay of value and ethnic preferences, the parameter $\beta$ can vary as a local variable of agents, so to sort out differences in the ratio between deterministic and random relocation depending on characteristics of agents. 
 We build on this peculiarity of random utility models to test how random behavior of a specific type of agents for value orientation, ethnicity or a combination of both can influence the emergence of stable equilibria of hybrid segregation. 
-We can moreover explore the interdependence between different types of agents and how determinism of agents would react to different distributions of the two characteristics of ethnicity and value orientation in the population. In the next section we describe our extension of \cite{paolillo2018} and how we implemented random utility discrete choice.
+We can moreover explore the interdependence between different types of agents and how determinism of agents would react to different distributions of the two characteristics of ethnicity and value orientation in the population. In the next section we describe our extension of [@paolillo2018] and how we implemented random utility discrete choice.
 
 
 
