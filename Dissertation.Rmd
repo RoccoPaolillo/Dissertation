@@ -106,6 +106,20 @@ The aim of this contribution is
 * Historical/academic background: years of end of racial laws and planned segregation (late 60's). Schelling was an economist and wanted to demonstrate how some forms of segregation could be "unplanned", emerging from the interaction of individual preferences. 
 * Original aim: explain unplanned segregation as aggregating outcome of individual preferences in limited spatial constraints. 
 * Description of the model and main contribution
+The basic condition of Schelling model is that similarity of agents is defined as a "twofold, exhaustive and recognizable distinction" @schelling69[p.20]
+Consider two groups of agents who reside on a checkerboard that represents a city, so that each individual agent occupies a spot and considers the set of the eight surrounding agents as its own ‘neighborhood’. 
+Some spots are empty on the checkerboard.
+At each time-step, one agent can choose whether to stay or to leave. 
+Its residential moves depend on homophily preferences based on color, with a certain threshold for in-group members. 
+Imagine a red agent starts. 
+If the percentage of other red agents in the neighborhood falls below the threshold, the agent relocates to one of the empty spots on the checkerboard, so to leave its previous spot in the old neighborhood empty. 
+By doing so, the red agent changes the composition of both its previous neighborhood and its new one.
+In particular, the percentage of same-color agents decreases for other red agents left in the previous neighborhood, while it increases for other red agents in the new neighborhood. 
+In this way, the previous neighborhood becomes less attractive for the remained red agents, who could leave when it is their turn to decide. On the contrary, the new neighborhood becomes more attractive both to other red agents who already live there (who are then more prone to stay) and potentially to unsatisfied red agents living in other neighborhoods. The same works for blue agents.
+Through the change in neighborhoods’ compositions, therefore, the relocation decision of each agent has unwillingly a cascade effect on the next agent to decide. 
+This enables a self-reinforcing dynamic so that some neighborhoods become progressively less attractive for agents of one group and more attractive for those of the other group. In other words, the concentration of one group in the neighborhood reinforces its attractiveness for other in-group members when they decide to relocate. 
+This, in turn, can lead to high segregation—even with relatively tolerant agents.
+
 * The impact of the model in literature: considered one of the first agent-based modelling, though not in the intention of Schelling. Influence in the agent-based literature. Known also in empirical studies of spatial segregation
 * Focus on agent-based modelling literature: BRIEFLY: extensions, application to other methods, e.g. GIS. In details in each section of the papers
 * What remains as a stable result: tendency towards segregation as a stable outcome
