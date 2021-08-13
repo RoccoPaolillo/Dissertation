@@ -13,6 +13,10 @@ author:
     | University of Bremen & Jacobs University Bremen
     | Mary-Somerville-Str. 9, 28359 Bremen, Germany  
     | rpaolillo@bigsss-bremen.de
+    | 
+    | **` SOME SHORT NOTES: `**
+    | **` OK `**
+    |  
 date: "Any note `r format(Sys.time(), '%d/%m/%y %H %M')`"
 language: en-GB
 bibliography: "references.bib"
