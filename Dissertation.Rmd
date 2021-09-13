@@ -56,30 +56,57 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \end{centering}
 
-WHAT        
+WHAT: The topic and focus  
+
 Society is made up of people belonging to different groups. 
 Residential segregation is a crucial issue to social policies, interested in reducing spatial segregation and foster integration.
 From a theoretical point of view, much researc has been interested in developing quantitative measures of spatial segregation, qualitative research on the residential preferences of people and how these translate into spatial segregation. 
 A critical interest in the social sciences is to understand the mechanisms and dynamics of how individual residential preferences can translate into spatial segregation. This dissertation is rooted in this area of research. 
-Agent-based modelling and analytical sociology, social complexity are widely recognized as a valid tool to understand such phenomena.     
-ORIGINAL FRAME  \rocco{definition of tolerance: Schelling with threshold "we don't want to stay in minority"}
-Thomas Schelling proposed in the last 60's a noteworthy agent-based modelling to show how individual preferences could translate into spatial segregation. In particular, the model builds on threshold preferences, i.e. the minimal fraction of similar ones in neighborhood composition to remain in a neighborhood. The main contribution of the model is to show how spatial segregation can result from even low preferences for similar ones through cascades effect of individual relocations. The model has a wide application in describing residential ethnic segregation.     
+Agent-based modelling and analytical sociology, social complexity are widely recognized as a valid tool to understand such phenomena.   
+
+PREVIOUS RESEARCH
+
+Thomas Schelling proposed in the last 60's a noteworthy agent-based modelling to show how individual preferences could translate into spatial segregation.
+In particular, the model builds on threshold preferences, i.e. the minimal fraction of similar ones in neighborhood composition to remain in a neighborhood. 
+The main contribution of the model is to show how spatial segregation can result from even low preferences for similar ones through cascades effect of individual relocations. 
+The model has a wide application in describing residential ethnic segregation.     
+
 BUT     
+
 However, societies today shows some features that clash with the original assumptions of Schelling's model and its application in ethnic segregation literature in Western societies.
 First, society is inertly diverse, the paradigm majority-minority does not work anymore as much as minority-minority.
-A growing stream of literature shows how other forms of spatial segregation have emerged, e.g. socio-economic status.
-Other forms of categories can drive homophily preferences in the residential decisions. This is first a theoretical opportunity that can be applied to Schelling's model, as well as seems an empirical evidence of current, diverse societies. 
-WHAT IS NEW?        
-This dissertation focuses on this aspect: definition of similarity based on other cross-ethnic categories, and the heterogeneity of members of the same group for one or either category.      
-HOW AND WHAT?  
-\rocco{tolerance first paper: we don't care}
-In a first paper, we focus on ethnic-oriented vs value-oriented agents. Results show how the introduction of value oriented agents diminishes ethnic segregation compared to the original Schelling's model, though a new form of value segregation emerges. We identify critical points were all agents can be satisfied with neighborhoods.
-\rocco{tolerance: weight of dominant >= secondary preference}
-In a second paper, we translate the model into a discrete choice random utility model. This not only updates the research outcome to more recent literature in Schelling's literature, but also serves different aims. First, discrete choice random utility models allow to model decision making in residential segregation, modeling the weight for each preference, which translates into randomness of behavior and test robustness of emerging phenomena. Additionally, we tested a mix of preferences with both ethnic and value preference for each type of agent and imposing a dominant and a secondary preference, along with different structural condition in terms of ethnic and value sizes. We specifically focus on how segregation scenarios would differ if a minority population would become more or less liberal. Results show how a tendency towards segregation remains a main outcome of relocation decision, through ethnic integration can be reached as an intermediate state due to a combination of higher randomness and relative group sizes. The most robust result is value segregation of conservatives, as in the ACS paper: that it is robust since appears both in threshold model and linear function.
-\rocco{tolerance: taste for diversity/push towards integration}
-A third and final paper defines a different level of tolerance. The paper focuses on the scenario where agents maximize their dominant preference and show more tolerant or integrationist attitudes for the secondary preference.
-LIMITS              
-The aim of this contribution is 
+A growing stream of literature shows how other forms of spatial segregation have emerged, e.g. socio-economic status, cultural similarity, education, etc.
+Other forms of categories can drive homophily preferences in the residential decisions. This is first a theoretical opportunity that can be applied to Schelling's model, as well as seems an empirical evidence of modern, diverse societies. 
+
+WHAT IS NEW?      
+
+This dissertation focuses on this aspect: membership of individuals and definition of similarity based on other cross-ethnic categories, heterogeneity of homophily preferences and tolerance towards diversity among people who belong to the same group for one dimension (primarly ethnicity) but differ for secondary characteristics or attitude.
+
+HOW AND WHAT 
+
+\rocco{first paper, definition of tolerance: threshold = 0 we are indifference}
+In a first paper, we extend the original Schelling threshold model focusing on diverse definition of similarity between agents.
+We focus on the interaction of conservative agents who define similarity based on shared ethnicity, indifferent to other characteristics, and tolerant value-oriented agents who define similarity based on shared value for tolerance towards ethnic diversity.
+Results show how the introduction of value oriented agents diminishes ethnic segregation compared to the original Schelling model, though a new form of value segregation emerges. We identify critical points were all agents can be satisfied with neighborhoods.
+
+\rocco{second paper, definition of tolerance: weight of dominant >= secondary preference}
+In a second paper, we translate the model into a discrete choice random utility model.
+This not only updates to more recent research in Schelling's literature, but also serves different aims.
+First, discrete choice random utility models allow to model decision making in residential segregation, modeling the weight for each preference, which translates into randomness of behavior and test robustness of emerging phenomena. 
+Additionally, we tested a mix of preferences with both ethnic and value preference for each type of agent and imposing a dominant and a secondary preference, along with different population structure in terms of ethnic and value sizes. 
+We specifically focus on how segregation scenarios would differ if a minority population would become more or less liberal.
+Results show how a tendency towards segregation remains a main outcome of relocation decision, through ethnic integration can be reached as an intermediate state due to a combination of higher randomness and relative group sizes. 
+The most robust result is value segregation of conservatives, as in the ACS paper: that it is robust since appears both in threshold model and linear function.
+
+\rocco{third paper, definition of tolerance: taste for diversity/push towards integration}
+A third and final paper tested specifically utility functions where agents are not simply tolerant to diversity but aim at living in specifically integrated neighborhoods for the two dimensions. Compared to the second paper, this paper delves into different shapes of utility functions between threshold and linear preferences in addition to weight attributed to each of the utility dimensions in the relocation choice.
+Intermediate preferences between integrationist and segregationist extreme are tested, to test how robust results in the previous two papers could be when different shapes of utility function are implemented.
+
+CONTRIBUTIONS AND LIMITS    
+
+The aim of this contribution is to extend the understanding of dynamics of urban segregation in front of a more complex society compared to the one described in the original Schelling model.
+Limits of the dissertation are discussed in the perspective of future research line and relation with empirical data.
+
 \newpage
 
 \tableofcontents
