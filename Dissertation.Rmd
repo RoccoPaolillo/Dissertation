@@ -222,6 +222,8 @@ This, in turn, can lead to high segregation—even with relatively tolerant agen
 * Extension: probabilistic model and linear utility function random utility model: to represent the decisional process, a weight for each dimension and robustness of emerging results (randomness); ethnic ratio and value distribution of minority
 * \rocco{here it risks to be tricky: a theoretical section, or mention briefly?} Here literature on discrete choice random utility: utility models (empirical science McFadden...), utility function vs probability function, what differs between abm and regression models. Literature in abm: Bruch-Van Rijt discussions...
 
+\rocco{pieces from AF paper, on random utility models, how utility and probability are computed. Anyway to narrow down to the actual model of the paper. Much text will be deleted/reshaped/rewritten}
+
 Random utility models for discrete choice have a long history in housing research [@frankhauser2016deciding] and in recent years they have been applied in the agent-based modeling framework [@bruch2006neighborhood,bruch2012methodological].
 Stemming from the utility maximization paradigm, these model assume that the decisional process underlying the choice of economic actors is unknown, and it can be deduced by observed preferences, i.e. how selection of respondents differ for attributes of the options available [@hess2018revisiting], e.g. different neighborhood composition. So, aim of regression models comparing choices of the sample is to estimate vector parameters that quantify the likelihood to select one option over the other depending on the  difference in their attributes [@manski1977structure]. 
 Utility in this context is defined as the attractiveness for each characteristic the options differ for and it is based on the response curve of the respondent [@bruch2015agent,train2009discrete] imposed based on the theoretical model of the analyst.
@@ -229,14 +231,14 @@ Nevertheless, random utility models divide between a systematic component of uti
 
 
 \begin{equation}
-    U = \beta_e U_e + \beta_v U_v + \epsilon
+    U = \beta_e X_e + \beta_v X_v + \epsilon
 \end{equation}
 
 where: \par
 $\beta_e$ = weight parameter for ethnic similarity, with $\beta_e [0, \infty)$ \par
-$U_e$ = ethnic utility of neighborhood \par
+$X_e$ = ethnic utility of neighborhood \par
 $\beta_v$ = weight parameter for value similarity, with $\beta_v [0, \infty)$  \par
-$U_v$ = value utility of neighborhood  \par
+$X_v$ = value utility of neighborhood  \par
 $\epsilon$ = random term \par
 
 While parameters $\beta_e$ and $\beta_v$ can be estimated  through regression models, the random term $\epsilon$ remains unknown. The conditional logit model introduced by  [@mcfadden1973conditional] is a specific type of discrete choice model that allow to quantify the effect of systematic utility over random component, though remaining the latter unknown. Assuming the random term $\epsilon$ follows a type I extreme value distribution, e.g. Gumbel distribution, the probability to select neighborhood \textit{j} out of options \textit{k} in choice set \textit{C} is:
@@ -247,7 +249,28 @@ P_{j\in{C}} = \frac{exp(\beta_e U^e_j + \beta_v U^v_j)}{\sum\limits_{{k\in{C}}}e
 \label{eq:cndtnl}
 \end{equation}
 
-<!-- from AF paper, cut out -->
+In this model we implement a simplified version of this formula for a binary choice. We compute as a logistic function the probability of an agent to leave the current neighborhood for the alternative option:
+
+
+\begin{equation}
+    P_{al} = \frac{exp(\beta_e U^e_{al} + \beta_v U^v_{al})}{1 + exp((\beta_e U^e_{cr} + \beta_v U^v_{cr}) - (\beta_e U^e_{al} + \beta_v U^v_{al}))}
+    \label{eq:lgst}
+\end{equation}
+
+
+where: \par
+$\beta_e$: weight for ethnic preference \par
+$\beta_v$: weight for value preference \par
+$U^e_{al}$: ethnic utility of alternative neighborhood \par
+$U^e_{cr}$: ethnic utility of current neighborhood \par
+$U^v_{al}$: value utility of alternative neighborhood \par
+$U^v_{cr}$: value utility of current neighborhood \par
+
+
+The logistic function in Eq: \ref{eq:lgst} is transformation of Eq: \ref{eq:cndtnl} written as $P_{al} = \frac{exp(U_{al})}{exp(U_{al}-U_{cr})}$, resulting from division of numerator and denominator by numerator $exp(U_{al})$, with $exp(U_{cr})/exp(U_{al}) = exp(U_{cr}) - exp(U_{al})$ [see @train2009discrete, pp.39] for details.^[For a discrete choice between two options, an alternative to the logistic function is to compute and add a random term from the Gumbel distribution to each option, and compute the difference between utilities, [see @zuccotti2021exploring]]
+The equivalence between logistic function  and conditional logit for two options is valid since the difference between random terms that are assumed to have a Gumbel distributions has a logistic distribution.
+
+\rocco{From old AF paper, to rewrite/delete}
 
 In this computation of probability, parameters $\beta_e$ and $\beta_v$ become the weight of how much the systematic component of utility for that dimension matters in the selection of the option compared to the random component represented  by the unknown random term. The higher $\beta_e$ or $\beta_v$, the higher the likelihood that the option with highest utility for that dimension will be selected, the lower $\beta_e$ or $\beta_v$, the higher the chance that an option is selected randomly for that dimension. With both $\beta_e$ and $\beta_v$ equal 0, the all options have equal probability to be selected, since the choice is totally stochastic, i.e. dependent on random term.
 
