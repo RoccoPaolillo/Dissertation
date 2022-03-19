@@ -267,8 +267,7 @@ $U^v_{al}$: value utility of alternative neighborhood \par
 $U^v_{cr}$: value utility of current neighborhood \par
 
 
-The logistic function in Eq: \ref{eq:lgst} is transformation of Eq: \ref{eq:cndtnl} written as $P_{al} = \frac{exp(U_{al})}{exp(U_{al}-U_{cr})}$, resulting from division of numerator and denominator by numerator $exp(U_{al})$, with $exp(U_{cr})/exp(U_{al}) = exp(U_{cr}) - exp(U_{al})$ [see @train2009discrete, pp.39] for details.^[For a discrete choice between two options, an alternative to the logistic function is to compute and add a random term from the Gumbel distribution to each option, and compute the difference between utilities, [see @zuccotti2021exploring]]
-The equivalence between logistic function  and conditional logit for two options is valid since the difference between random terms that are assumed to have a Gumbel distributions has a logistic distribution.
+Eq: \ref{eq:lgst} is transformation of Eq: \ref{eq:cndtnl} written as $P_{al} = \frac{exp(U_{al})}{exp(U_{al}-U_{cr})}$, resulting from division of numerator and denominator by numerator $exp(U_{al})$, with $exp(U_{cr})/exp(U_{al}) = exp(U_{cr}) - exp(U_{al})$ [see @train2009discrete, pp.39] for details.
 
 \rocco{From old AF paper, to rewrite/delete}
 
